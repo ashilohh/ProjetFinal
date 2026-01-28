@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BlogConsole.Services;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -22,6 +23,8 @@ namespace BlogConsole.UI
 
         public void Menu()
         {
+            Console.WriteLine("===BLOG CONSOLE===");
+
             while (true)
             {
                 this.DisplayMenu();
@@ -30,12 +33,26 @@ namespace BlogConsole.UI
                 switch (choix)
                 {
                     case "1":
-                        
+                        Console.WriteLine("===Lister les articles===");
+                        ArticleService getAll = new ArticleService();
+                        foreach(var article in getAll.GetArticles())
+                        {
+                            Console.WriteLine(article);
+                        }
                         break;
+
                     case "2":
-                        
+                        Console.WriteLine("===Creer un Article===");
+                        Console.Write("Saisir un titre:");
+                        string? titre = Console.ReadLine();
+                        Console.Write("Saisir contenu:");
+                        string? content = Console.ReadLine();
+
+                        ArticleService create = new ArticleService();
+                        create.CreateArticle(titre, content);
+                        Console.WriteLine("");
                         break;
-                    case"3":
+                    case "3":
                         break;
                     case "4":
                         break;
@@ -45,6 +62,7 @@ namespace BlogConsole.UI
                         break;
                     case "7":
                         break;
+
                     case "0":
                         return;
                     default:

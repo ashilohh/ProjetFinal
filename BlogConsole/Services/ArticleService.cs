@@ -7,7 +7,9 @@ namespace BlogConsole.Services
 {
     internal class ArticleService
     {
-        private List<Article> _articles = new List<Article>();
+        private  List<Article> _articles = new List<Article>();
+        private  int _nextId = 1;
+        private  CommentService _commentService;
 
         public List<Article> GetArticles()
         {
@@ -25,6 +27,7 @@ namespace BlogConsole.Services
             {
                 Title = title,
                 Content = content,
+                Id = _nextId++
             };
 
             _articles.Add(article);
@@ -55,7 +58,7 @@ namespace BlogConsole.Services
                 return false;
             }
 
-            
+            _commentService.DeleteByArticle(id);
             _articles.Remove(articleToDelete);
             
             return true;

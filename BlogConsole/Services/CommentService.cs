@@ -8,7 +8,7 @@ namespace BlogConsole.Services
     internal class CommentService
     {
         private List<Comment> _comments = new List<Comment>();
-
+        private int _nextId = 0;
 
         public List<Comment> GetByArticle(int articleId)
         {
@@ -21,7 +21,8 @@ namespace BlogConsole.Services
             {
                 ArticleId = articleId,
                 Author = author,
-                Content = content
+                Content = content,
+                Id = _nextId++
             };
 
             _comments.Add(comment);
@@ -42,5 +43,11 @@ namespace BlogConsole.Services
             return true;
 
         }
+
+        public void DeleteByArticle(int articleId)
+        {
+            _comments.RemoveAll(c => c.ArticleId == articleId);
+        }
+
     }
 }

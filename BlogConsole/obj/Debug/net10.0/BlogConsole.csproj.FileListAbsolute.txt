@@ -1,0 +1,15 @@
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\obj\Debug\net10.0\BlogConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\obj\Debug\net10.0\BlogConsole.AssemblyInfoInputs.cache
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\obj\Debug\net10.0\BlogConsole.AssemblyInfo.cs
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\obj\Debug\net10.0\BlogConsole.csproj.CoreCompileInputs.cache
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\obj\Debug\net10.0\BlogConsole.sourcelink.json
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\bin\Debug\net10.0\BlogConsole.exe
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\bin\Debug\net10.0\BlogConsole.deps.json
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\bin\Debug\net10.0\BlogConsole.runtimeconfig.json
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\bin\Debug\net10.0\BlogConsole.dll
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\bin\Debug\net10.0\BlogConsole.pdb
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\obj\Debug\net10.0\BlogConsole.dll
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\obj\Debug\net10.0\refint\BlogConsole.dll
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\obj\Debug\net10.0\BlogConsole.pdb
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\obj\Debug\net10.0\BlogConsole.genruntimeconfig.cache
+C:\Users\Administrateur\Desktop\ProjetFinal\BlogConsole\obj\Debug\net10.0\ref\BlogConsole.dll
