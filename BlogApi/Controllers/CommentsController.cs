@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BlogApi.Controllers
 {
-    [Route("api/comment")]
+    [Route("api/comment/{articleId}")]
     [ApiController]
     public class CommentsController : ControllerBase
     {
