@@ -6,7 +6,5 @@ namespace BlogConsole.UI
 {
     internal class ConsoleHelper
     {
-
-       
     }
 }

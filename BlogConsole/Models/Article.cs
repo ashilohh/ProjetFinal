@@ -23,8 +23,6 @@ namespace BlogConsole.Models
         {
             Title = title;
             Content = content;
-            CreatedAt = DateTime.Now;
-            LastUpdatedAt = CreatedAt;
         }
 
         public Article(int id, string title, string content): this(title, content)
@@ -34,8 +32,10 @@ namespace BlogConsole.Models
 
         public override string ToString()
         {
-            return $"Titre: {Title} | {Content}\n " +
-                   $"Créé le: {CreatedAt:dd/MM/yyyy} | Dernière modification le: {LastUpdatedAt:dd/MM/yyyy}";
+            return $"#Id:{Id}#\n" +
+                   $"Titre: {Title}\n {Content}\n " +
+                   $"Créé le: {CreatedAt:dd/MM/yyyy} | Dernière modification le: {LastUpdatedAt:dd/MM/yyyy}\n" +
+                   $"===========================================================";
         }
 
     }

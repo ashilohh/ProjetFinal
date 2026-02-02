@@ -33,7 +33,7 @@ namespace BlogConsole.Services
             Comment commentToDelete = _comments.FirstOrDefault(comment => comment.Id == id);
 
 
-            if (commentToDelete != null)
+            if (commentToDelete == null)
             {
                 return false;
             }

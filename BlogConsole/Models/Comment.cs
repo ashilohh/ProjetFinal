@@ -28,8 +28,10 @@ namespace BlogConsole.Models
 
         public override string ToString()
         {
-            return $"Artcicle: {ArticleId} | {Author} : {Content}\n " +
-                   $"Créé le: {CreatedAt:dd/MM/yyyy}";
+            return $"#Artcicle: {ArticleId} | id: {Id}#\n" +
+                   $"{Author}\n {Content}\n " +
+                   $"Créé le: {CreatedAt:dd/MM/yyyy}\n" +
+                   $"===========================================================";
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿
+using BlogConsole.Models;
+using BlogConsole.Services;
 using BlogConsole.UI;
 
-ConsoleMenu console = new ConsoleMenu();
 
-console.Menu();
+ConsoleMenu.Menu();

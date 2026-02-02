@@ -27,6 +27,8 @@ namespace BlogConsole.Services
             {
                 Title = title,
                 Content = content,
+                CreatedAt = DateTime.Now,
+                LastUpdatedAt = DateTime.Now,
                 Id = _nextId++
             };
 
@@ -54,12 +56,16 @@ namespace BlogConsole.Services
             Article articleToDelete = _articles.FirstOrDefault(article => article.Id == id);
             
 
-            if (articleToDelete != null)
+            if (articleToDelete == null)
             {
                 return false;
             }
 
-            _commentService.DeleteByArticle(id);
+            if (_commentService != null)
+            {
+                _commentService.DeleteByArticle(id);
+            }
+            
             _articles.Remove(articleToDelete);
             
             return true;

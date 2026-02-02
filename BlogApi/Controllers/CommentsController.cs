@@ -19,7 +19,7 @@ namespace BlogApi.Controllers
         [HttpGet("{articleId}")]
         public IActionResult GetCommentsByarticleId(int articleId)
         {
-            var comments = new CommentService();
+            var comments = _commentService;
             return Ok(comments.GetByArticle(articleId));
         }
 
@@ -34,7 +34,7 @@ namespace BlogApi.Controllers
         [HttpDelete("{commentId}")]
         public IActionResult DeleteComment(int commentId)
         {
-            var comment = new CommentService();
+            var comment = _commentService;
             return Ok(comment.DeleteComment(commentId));
         }
     }
