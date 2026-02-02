@@ -21,7 +21,7 @@ namespace BlogConsole.Services
             return _articles.FirstOrDefault(a => a.Id == id);
         }
 
-        public void CreateArticle(string title, string content)
+        public Article CreateArticle(string title, string content)
         {
             Article article = new Article()
             {
@@ -31,6 +31,7 @@ namespace BlogConsole.Services
             };
 
             _articles.Add(article);
+            return article;
         }
 
         public bool UpdateArticle(int id, string newTitle, string newContent)
